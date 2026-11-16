@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jaina McGregor | Senior Data Analyst &amp; Enterprise Governance Specialist</title>
+<meta name="description" content="Senior Data Analyst and Enterprise Governance Specialist: security tools rationalization, Databricks data centralization, SQL, Power BI executive dashboards, and multi-region asset management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+:root{--bg:#0a0f1e;--card:#121a33;--card2:#0e1529;--line:#222c4f;--tx:#c5cee3;--hd:#f5f7fb;--mu:#8793b3;--ac:#38bdf8;--ok:#34d399;--wn:#fbbf24;--er:#f87171}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);background-image:radial-gradient(900px 420px at 85% -8%,color-mix(in srgb,var(--ac) 16%,transparent),transparent)}
+[hidden]{display:none!important}
+.mono,.tag,code{font-family:"Fira Code",ui-monospace,Menlo,Consolas,monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+a{color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,15,30,.82);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
+.brand{color:var(--hd);font-weight:700;text-decoration:none;white-space:nowrap}.brand span{color:var(--ac);font-weight:500}
+nav{display:flex;gap:.2rem;overflow-x:auto;scrollbar-width:none}
+nav a{color:var(--mu);text-decoration:none;font-size:.88rem;padding:.4rem .7rem;border-radius:6px;white-space:nowrap;transition:.2s}
+nav a:hover,nav a.on{color:var(--hd);background:var(--card)}
+.hero{padding:4.5rem 0 3.2rem}
+h1{font-size:clamp(2.3rem,6vw,3.7rem);color:var(--hd);line-height:1.08;letter-spacing:-.035em;font-weight:800}
+.role{color:var(--ac);font-size:clamp(1.05rem,2.5vw,1.35rem);font-weight:600;margin:.7rem 0 1.1rem}
+.lead{max-width:800px;font-size:1.08rem}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 0}
+.btn{display:inline-block;padding:.65rem 1.15rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;background:var(--ac);color:#06101f;transition:.2s;border:1px solid var(--ac);cursor:pointer}
+.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.btn.g{background:transparent;color:var(--hd);border-color:var(--line)}.btn.g:hover{border-color:var(--ac)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.8rem;margin-top:2rem}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.stat b{display:block;font-size:1.9rem;color:var(--hd);line-height:1.2}.stat span{font-size:.82rem;color:var(--mu)}
+.quote{border-left:3px solid var(--ac);background:color-mix(in srgb,var(--ac) 8%,transparent);padding:1rem 1.25rem;border-radius:0 10px 10px 0;margin-top:1.8rem;max-width:860px;color:var(--hd)}
+section{padding:3.6rem 0;border-top:1px solid var(--line)}
+h2{color:var(--hd);font-size:1.8rem;letter-spacing:-.02em;line-height:1.2}
+.sub{color:var(--mu);margin:.4rem 0 1.8rem;max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.3rem;transition:border-color .2s}
+.card:hover{border-color:var(--ac)}
+.card h3{color:var(--hd);font-size:1.05rem;margin-bottom:.55rem}
+.card p{font-size:.93rem}
+ul.l{list-style:none}ul.l li{padding-left:1.1rem;position:relative;font-size:.93rem;margin:.4rem 0}ul.l li:before{content:"▹";position:absolute;left:0;color:var(--ac)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+.tag{font-size:.75rem;padding:.18rem .55rem;border-radius:6px;background:color-mix(in srgb,var(--ac) 13%,transparent);color:var(--ac);border:1px solid color-mix(in srgb,var(--ac) 28%,transparent)}
+.acc{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:.8rem;overflow:hidden;transition:border-color .2s}
+.acc.open{border-color:color-mix(in srgb,var(--ac) 55%,var(--line))}
+.acc-h{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:none;border:0;color:inherit;font:inherit;text-align:left;padding:1.1rem 1.3rem;cursor:pointer}
+.acc-h:hover{background:rgba(255,255,255,.03)}
+.acc-h b{display:block;color:var(--hd);font-size:1.05rem}.acc-h em{font-style:normal;color:var(--ac);font-size:.84rem}
+.acc-h i{width:9px;height:9px;border-right:2px solid var(--mu);border-bottom:2px solid var(--mu);transform:rotate(45deg);transition:.25s;flex:none;margin-right:.2rem}
+.acc.open .acc-h i{transform:rotate(225deg)}
+.acc-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}.acc.open .acc-b{grid-template-rows:1fr}
+.acc-in{overflow:hidden;min-height:0;padding:0 1.3rem}.acc.open .acc-in{padding-bottom:1.25rem}
+.acc-in>p{font-size:.95rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:.9rem}
+.cols h5{color:var(--hd);font-size:.88rem;margin-bottom:.2rem}.cols p,.cols li{font-size:.92rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.1rem}
+.tabs button{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:.45rem .85rem;font:500 .85rem Inter,sans-serif;cursor:pointer;transition:.2s}
+.tabs button:hover{border-color:var(--ac);color:var(--hd)}
+.tabs button.on{background:var(--ac);color:#06101f;border-color:var(--ac)}
+.panel{display:none}.panel.on{display:block;animation:fade .3s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.lab{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:1.4rem;margin-bottom:1.2rem}
+.lab-h{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}.lab-h b{color:var(--hd);font-size:1.1rem}
+.split{display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:1rem}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.pick{display:flex;flex-direction:column;gap:.4rem}
+.pick button{text-align:left;background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:.55rem .8rem;cursor:pointer;font:500 .85rem Inter,sans-serif;transition:.2s}
+.pick button:hover{border-color:var(--ac)}.pick button.on{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--hd)}
+.detail{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.2rem}
+.detail h4{color:var(--hd);margin-bottom:.2rem}.detail dt{color:var(--ac);font-size:.8rem;margin-top:.7rem}.detail dd{font-size:.92rem}
+.filter-group{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.filter-btn{background:var(--card);border:1px solid var(--line);color:var(--tx);padding:.35rem .7rem;border-radius:6px;font-size:.8rem;cursor:pointer}
+.filter-btn.on{background:var(--ac);color:#06101f;border-color:var(--ac)}
+.data-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin-top:.8rem}
+table.dt-grid{width:100%;border-collapse:collapse;font-size:.85rem;text-align:left}
+table.dt-grid th{background:var(--card);color:var(--hd);padding:.6rem .8rem;border-bottom:1px solid var(--line)}
+table.dt-grid td{padding:.6rem .8rem;border-bottom:1px solid var(--line)}
+.dl{text-align:center;border:1px dashed var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.dl-actions{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.1rem}
+footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:var(--mu);font-size:.88rem}footer a{margin:0 .5rem}
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
+@media(max-width:700px){.nav .wrap{flex-direction:column;height:auto;padding:.6rem 1.25rem}nav{width:100%}.hero{padding-top:2.5rem}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Jaina McGregor <span>| Data Analytics &amp; Governance</span></a>
+    <nav>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#demos">Interactive Demos</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#cases">Delivery Record</a>
+      <a href="#toolbox">Toolbox</a>
+      <a href="#edu">Credentials</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Jaina McGregor</h1>
+      <div class="role">Senior Data Analyst &amp; Enterprise Governance Specialist</div>
+      <p class="lead">Senior data professional specializing in global security tools rationalization, Databricks data centralization, data modeling, SQL optimization, and executive Power BI/Tableau dashboarding. I bridge complex multi-region telemetry (AD, EMEA, APAC, HO) with actionable cost-optimization and compliance frameworks.</p>
+      <div class="btns">
+        <a class="btn" href="mailto:JainaMcGregor@gmail.com">Contact me</a>
+        <a class="btn g" href="#demos">Try the interactive demos</a>
+        <a class="btn g" href="https://github.com/jkmcgregor" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-n="4" data-s=" Regions">0</b><span>global operating zones harmonized (AD, EMEA, APAC, HO)</span></div>
+        <div class="stat"><b data-n="100" data-s="%">0</b><span>asset inventory reconciliation accuracy</span></div>
+        <div class="stat"><b data-n="30" data-s="%">0</b><span>reduction in redundant enterprise software spend</span></div>
+        <div class="stat"><b>Zero</b><span>downtime across Databricks ingestion pipelines</span></div>
+      </div>
+      <div class="quote">&ldquo;Effective data governance is not just about storing records; it is about establishing a single source of truth that drives cost rationalization, risk mitigation, and executive decision-making across global silos.&rdquo;</div>
+    </div>
+  </div>
+
+  <section id="capabilities" class="reveal">
+    <div class="wrap">
+      <h2>Core Data Capabilities</h2>
+      <p class="sub">Click through the four data disciplines I bring to enterprise technology programs.</p>
+      <div class="tabset">
+        <div class="tabs">
+          <button data-t="inv" class="on">Asset Inventory &amp; Rationalization</button>
+          <button data-t="eng">Data Ingestion &amp; Databricks</button>
+          <button data-t="bi">Executive BI &amp; Power BI</button>
+          <button data-t="gov">Governance &amp; CRI Mappings</button>
+        </div>
+        <div class="panel on" data-p="inv">
+          <div class="card">
+            <h3>Portfolio &amp; Contract Rationalization</h3>
+            <ul class="l">
+              <li>End-to-end management of enterprise security and software technology inventories</li>
+              <li>Reconciliation of vendor, contract, and financial data across global business units (AD, EMEA, APAC, HO)</li>
+              <li>Identification of functional overlap, shadow IT, and redundant licensing spend</li>
+              <li>Data modeling for portfolio optimization and lifecycle tracking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel" data-p="eng">
+          <div class="card">
+            <h3>Databricks &amp; Pipeline Engineering</h3>
+            <ul class="l">
+              <li>Centralizing and governing telemetry data within Databricks lakes/lakehouses</li>
+              <li>SQL-driven data cleaning, normalization, and transformation pipelines</li>
+              <li>Python and Pandas integration for programmatic data auditing</li>
+              <li>API webhook and flat-file ingestion schema validation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel" data-p="bi">
+          <div class="card">
+            <h3>Dashboarding &amp; Data Storytelling</h3>
+            <ul class="l">
+              <li>Advanced proficiency in Microsoft Power BI and Tableau</li>
+              <li>Design of executive KPI scorecards for cost optimization and risk exposure</li>
+              <li>Drill-down interactive reporting for cross-functional stakeholders (Finance, Procurement, Security Architecture)</li>
+              <li>Automated scheduled reporting and metric tracking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel" data-p="gov">
+          <div class="card">
+            <h3>Governance &amp; Compliance Frameworks</h3>
+            <ul class="l">
+              <li>Cybersecurity Risk Information (CRI) control mappings and regulatory alignment</li>
+              <li>Audit-ready data lineage documentation and schema version control</li>
+              <li>Cross-functional stakeholder coordination across Security, Finance, and Legal</li>
+              <li>Data quality monitoring and anomaly detection protocols</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demos" class="reveal">
+    <div class="wrap">
+      <h2>Interactive Data Demos</h2>
+      <p class="sub">Explore two interactive tools simulating my approach to global asset rationalization and Databricks data pipeline telemetry.</p>
+      
+      <!-- Demo 1: Asset Inventory & Cost Rationalization Explorer -->
+      <div class="lab">
+        <div class="lab-h"><b>Global Asset Inventory &amp; Cost Rationalization Explorer</b><span class="tag">Simulated Security Tools Dataset</span></div>
+        <p class="sub" style="margin:0 0 1rem">Filter enterprise security tool records across global regions and lifecycle states to evaluate rationalization status and projected savings.</p>
+        <div class="filter-group" id="invFilters">
+          <button class="filter-btn on" data-reg="ALL">All Regions</button>
+          <button class="filter-btn" data-reg="AD">Americas (AD)</button>
+          <button class="filter-btn" data-reg="EMEA">EMEA</button>
+          <button class="filter-btn" data-reg="APAC">APAC</button>
+          <button class="filter-btn" data-reg="HO">Headquarters (HO)</button>
+        </div>
+        <div class="data-table-wrap">
+          <table class="dt-grid" id="assetTable">
+            <thead>
+              <tr>
+                <th>Tool Name</th>
+                <th>Category</th>
+                <th>Region</th>
+                <th>Contract Annual Value</th>
+                <th>Rationalization Recommendation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Populated via JS -->
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:.8rem;font-size:.85rem;color:var(--mu)">Filtered Annual Spend Sum: <b id="spendSum" style="color:var(--hd)">$0</b></p>
+      </div>
+
+      <!-- Demo 2: Databricks Pipeline Data Lineage Simulator -->
+      <div class="lab">
+        <div class="lab-h"><b>Databricks Pipeline Data Lineage Simulator</b><span class="tag">Telemetry Ingestion &amp; Transformation</span></div>
+        <p class="sub" style="margin:0 0 1rem">Step through the stages of a centralized data pipeline processing raw multi-region security telemetry into executive KPIs.</p>
+        <div class="split">
+          <div class="pick" id="pipeStages">
+            <button class="on" data-stage="0">1. Raw Ingestion (JSON/Webhooks)</button>
+            <button data-stage="1">2. Databricks Cleaning &amp; Parsing</button>
+            <button data-stage="2">3. Schema Normalization &amp; Join</button>
+            <button data-stage="3">4. Executive KPI / Power BI Output</button>
+          </div>
+          <div class="detail" id="pipeOut"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artifacts" class="reveal">
+    <div class="wrap">
+      <h2>Technical Data Artifacts</h2>
+      <p class="sub">Sanitized samples representing governance specifications, data models, and BI analytics frameworks.</p>
+      <div class="grid">
+        <div class="card dl">
+          <div>
+            <h3>Security Tool Inventory Schema Spec</h3>
+            <p>Databricks table schema, SQL normalization scripts, foreign-key relationship mappings, and multi-region telemetry rules.</p>
+          </div>
+          <div class="dl-actions">
+            <a class="btn" href="./Security_Tool_Inventory_Schema_Spec.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+          </div>
+        </div>
+        <div class="card dl">
+          <div>
+            <h3>Executive Security ROI Dashboard Spec</h3>
+            <p>Power BI visual layout blueprint, data model star schema, DAX measure definitions, and stakeholder drill-down hierarchy.</p>
+          </div>
+          <div class="dl-actions">
+            <a class="btn" href="./Executive_Security_ROI_Dashboard_Spec.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+          </div>
+        </div>
+        <div class="card dl">
+          <div>
+            <h3>Multi-Region Data Governance RTM</h3>
+            <p>Requirements Traceability Matrix mapping CRI security standards, asset tracking criteria, and audit validation test cases.</p>
+          </div>
+          <div class="dl-actions">
+            <a class="btn" href="./Multi_Region_Data_Governance_RTM.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+          </div>
+        </div>
+      </div>
+      <p class="sub" style="margin-top:1rem">All artifacts are sanitized portfolio editions reflecting enterprise-grade data management practices.</p>
+    </div>
+  </section>
+
+  <section id="cases" class="reveal">
+    <div class="wrap">
+      <h2>Data Delivery Record</h2>
+      <p class="sub">Key initiatives highlighting expertise in data inventory management, governance, and BI reporting.</p>
+      
+      <div class="acc open">
+        <button class="acc-h" aria-expanded="true"><span><b>Security Tools Rationalization &amp; Global Inventory Centralization</b><em>Enterprise Security Program &middot; Databricks, SQL, Power BI</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Led data analysis and governance for a comprehensive security tools rationalization initiative across AD, EMEA, APAC, and HO.</p>
+            <div class="cols">
+              <div><h5>The Challenge</h5><p>Disparate regional security tool inventories maintained across spreadsheets created redundancy, opaque contract terms, and unmeasured licensing waste.</p></div>
+              <div><h5>What I Did</h5><ul class="l"><li>Partnered with Cyber Data teams to centralize records in Databricks</li><li>Authored SQL queries and transformation scripts to normalize vendor and contract telemetry</li><li>Built executive Power BI dashboards tracking spend vs. capability overlap</li></ul></div>
+              <div><h5>The Outcome</h5><p>A unified enterprise technology inventory that enabled leadership to execute targeted decommissioning, cutting redundant software costs by 30%.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Databricks</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Data Governance</span><span class="tag">Asset Management</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>Enterprise ERP Data Quality Audit &amp; Reporting Re-engineering</b><em>City of Albuquerque &middot; SQL Server, Oracle SQL Developer</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Executed deep-dive forensic data audits on legacy financial reporting views to eliminate silent filtering and restore data integrity.</p>
+            <div class="cols">
+              <div><h5>What I Did</h5><p>Analyzed custom SQL procedures side-by-side against raw relational database tables, identified flawed filtering logic, and re-engineered data queries to ensure 100% record visibility.</p></div>
+              <div><h5>The Outcome</h5><p>Eliminated manual spreadsheet reconciliation for finance analysts and established robust automated data validation checks.</p></div>
+            </div>
+            <div class="tags"><span class="tag">SQL</span><span class="tag">Oracle SQL Developer</span><span class="tag">Data Quality</span><span class="tag">ERP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>API Payload Normalization &amp; Compliance Telemetry</b><em>AutoFi &middot; REST, JSON, Python</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Designed structured mapping matrices and error-handling telemetry for high-volume financial webhook integrations.</p>
+            <div class="cols">
+              <div><h5>What I Did</h5><p>Resolved schema drift between third-party API providers and internal data systems by enforcing strict type validation, automated retry mechanisms, and dead-letter queue monitoring.</p></div>
+            </div>
+            <div class="tags"><span class="tag">JSON/XML</span><span class="tag">Python</span><span class="tag">API Telemetry</span><span class="tag">Data Mapping</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolbox" class="reveal">
+    <div class="wrap">
+      <h2>Technical Toolbox</h2>
+      <p class="sub">Data tools, database platforms, and analytical frameworks used in production environments.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Data &amp; BI Platforms</h3>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Databricks</span><span class="tag">Microsoft Power BI</span><span class="tag">Tableau</span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Jupyter</span><span class="tag">Excel (Advanced)</span></div>
+        </div>
+        <div class="card">
+          <h3>Databases &amp; Querying</h3>
+          <div class="tags"><span class="tag">Microsoft SQL Server</span><span class="tag">Oracle SQL Developer</span><span class="tag">PostgreSQL</span><span class="tag">JSON / XML</span><span class="tag">REST APIs</span><span class="tag">ETL Pipelines</span></div>
+        </div>
+        <div class="card">
+          <h3>Governance &amp; Delivery</h3>
+          <div class="tags"><span class="tag">Data Governance</span><span class="tag">CRI Mappings</span><span class="tag">Asset Lifecycle</span><span class="tag">JIRA</span><span class="tag">Confluence</span><span class="tag">Git / GitHub</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="edu" class="reveal">
+    <div class="wrap">
+      <h2>Education &amp; Credentials</h2>
+      <p class="sub">Rigorous academic foundation in Business Information Systems combined with ongoing specialization in Machine Learning and data analytics.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Graduate</h3>
+          <p><b style="color:var(--hd)">M.S., IT Project Management</b><br>Northeastern University</p>
+        </div>
+        <div class="card">
+          <h3>Undergraduate</h3>
+          <p><b style="color:var(--hd)">B.S., Business Information Systems</b><br>Oregon State University<br>Dean&rsquo;s Leadership and Professional Achievement Award</p>
+        </div>
+        <div class="card">
+          <h3>Current Coursework &amp; Certs</h3>
+          <ul class="l">
+            <li>Machine Learning (Jupyter / Python modeling)</li>
+            <li>W3Schools Advanced SQL Certification</li>
+            <li>Six Sigma Yellow Belt (SSYB)</li>
+            <li>Lean Kanban Essentials &amp; Scrum for Operations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Jaina McGregor &middot; Data Analytics &amp; Governance</p>
+    <p style="margin-top:.5rem"><a href="mailto:JainaMcGregor@gmail.com">Email</a><a href="https://github.com/jkmcgregor" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+$$('.acc-h').forEach(b=>b.addEventListener('click',()=>{const a=b.parentElement,o=a.classList.toggle('open');b.setAttribute('aria-expanded',o)}));
+$$('.tabset').forEach(ts=>{const bs=$$('.tabs button',ts),ps=$$('.panel',ts);bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.classList.toggle('on',x===b));ps.forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t))}))});
+function count(el){const n=+el.dataset.n,s=el.dataset.s||'',t0=performance.now();(function f(t){const p=Math.min((t-t0)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(t0)}
+window.countUp=count;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');$$('[data-n]',e.target).forEach(count);io.unobserve(e.target)}}),{threshold:.08});
+$$('.reveal,.hero').forEach(x=>io.observe(x));
+const links=$$('header nav a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+links.forEach(a=>{const s=$(a.getAttribute('href'));s&&so.observe(s)});
+window.$=$;window.$$=$$;
+})();
+
+/* Interactive Demo 1 Logic: Asset Explorer */
+(function(){
+const assets=[
+  {name:"Cloud SIEM Platform", cat:"Monitoring", reg:"AD", val:145000, rec:"Retain & Optimize"},
+  {name:"Legacy Vulnerability Scanner", cat:"Scanning", reg:"EMEA", val:85000, rec:"Decommission"},
+  {name:"Endpoint Protection Suite", cat:"Endpoint", reg:"HO", val:240000, rec:"Retain & Expand"},
+  {name:"Identity Access Manager", cat:"IAM", reg:"APAC", val:110000, rec:"Consolidate"},
+  {name:"Data Loss Prevention Tool", cat:"DLP", reg:"EMEA", val:95000, rec:"Consolidate"},
+  {name:"Code Security Analyzer", cat:"DevSecOps", reg:"AD", val:120000, rec:"Retain & Optimize"},
+  {name:"Redundant Log Collector", cat:"Logging", reg:"APAC", val:50000, rec:"Decommission"}
+];
+const tbody=$('#assetTable tbody'), sumEl=$('#spendSum'), btns=$$('#invFilters button');
+function render(reg){
+  tbody.innerHTML='';
+  let total=0;
+  assets.filter(a=>reg==='ALL'||a.reg===reg).forEach(a=>{
+    total+=a.val;
+    const tr=document.createElement('tr');
+    const badge=a.rec.includes('Decommission')?'<span class="tag" style="color:var(--er);border-color:var(--er);background:rgba(248,113,113,.1)">'+a.rec+'</span>':'<span class="tag">'+a.rec+'</span>';
+    tr.innerHTML='<td><b>'+a.name+'</b></td><td>'+a.cat+'</td><td>'+a.reg+'</td><td>$'+a.val.toLocaleString()+'</td><td>'+badge+'</td>';
+    tbody.appendChild(tr);
+  });
+  sumEl.textContent='$'+total.toLocaleString();
+}
+btns.forEach(b=>b.addEventListener('click',()=>{
+  btns.forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  render(b.dataset.reg);
+}));
+render('ALL');
+})();
+
+/* Interactive Demo 2 Logic: Databricks Pipeline Simulator */
+(function(){
+const stages=[
+  ["Raw Ingestion Layer", "Ingesting asynchronous webhooks and flat files from global security tools across AD, EMEA, APAC, and HO. Incoming JSON payloads are buffered in cloud storage before stream processing."],
+  ["Databricks Cleansing & Parsing", "Executing automated Databricks notebook jobs using SQL and PySpark to strip malformed characters, handle null timestamps, and parse nested metadata fields into structured tables."],
+  ["Schema Normalization & Join", "Joining normalized telemetry with enterprise contract, vendor master data, and regional cost centers. Resolving identifier mismatches to establish a unified single source of truth."],
+  ["Executive KPI / Power BI Output", "Publishing clean Delta Lake tables directly to executive Power BI dashboards, tracking total spend exposure, duplicate tool overlap, and projected rationalization savings in real time."]
+];
+const btns=$$('#pipeStages button'), out=$('#pipeOut');
+function showStage(i){
+  btns.forEach((b,j)=>b.classList.toggle('on',j==i));
+  out.innerHTML='<h4>'+stages[i][0]+'</h4><p style="margin-top:.5rem;font-size:.95rem">'+stages[i][1]+'</p><div class="tags" style="margin-top:1rem"><span class="tag">Status: Verified</span><span class="tag">Environment: Databricks Prod</span></div>';
+}
+btns.forEach((b,i)=>b.addEventListener('click',()=>showStage(i)));
+showStage(0);
+})();
+</script>
+</body>
+</html>
