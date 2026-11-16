@@ -275,10 +275,26 @@ footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:v
   <section id="cases" class="reveal">
     <div class="wrap">
       <h2>Data Delivery Record</h2>
-      <p class="sub">Key initiatives highlighting expertise in data inventory management, governance, and BI reporting.</p>
+      <p class="sub">Key initiatives highlighting expertise in data inventory management, governance, predictive modeling, and BI reporting.</p>
       
+      <!-- ML Case Study Accordion Item -->
       <div class="acc open">
-        <button class="acc-h" aria-expanded="true"><span><b>Security Tools Rationalization &amp; Global Inventory Centralization</b><em>Enterprise Security Program &middot; SQL Server, Oracle SQL Developer, Power BI</em></span><i></i></button>
+        <button class="acc-h" aria-expanded="true"><span><b>Predictive Retail Revenue Engine &amp; Operational Demand Modeling</b><em>Applied Machine Learning Case Study &middot; Python, Pandas, scikit-learn</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Designed and prototyped an applied machine learning pipeline to forecast weekly store revenue and foot-traffic demand, translating statistical model performance into operational inventory and staffing decisions.</p>
+            <div class="cols">
+              <div><h5>The Business Problem</h5><p>Retail operations managers required proactive weekly demand forecasts rather than reactive averages to optimize inventory replenishment schedules and labor allocations.</p></div>
+              <div><h5>Methodology &amp; Execution</h5><ul class="l"><li>Engineered feature spaces in Python using Pandas and NumPy</li><li>Established a naive baseline Mean Absolute Error (MAE) benchmark ($5,329)</li><li>Trained a multivariate linear regression model with out-of-sample holdout validation (75/25 split)</li></ul></div>
+              <div><h5>Validation &amp; Impact</h5><p>Achieved a test MAE of ~$2,800 and an $R^2$ of 0.72 on unseen operational holdout data. Systematically audited feature spaces to prevent data leakage from target-derived variables.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">scikit-learn</span><span class="tag">Predictive Modeling</span><span class="tag">Data Governance</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>Security Tools Rationalization &amp; Global Inventory Centralization</b><em>Enterprise Security Program &middot; SQL Server, Oracle SQL Developer, Power BI</em></span><i></i></button>
         <div class="acc-b">
           <div class="acc-in">
             <p>Led data analysis and governance for a comprehensive security tools rationalization initiative across AD, EMEA, APAC, and HO.</p>
@@ -324,15 +340,15 @@ footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:v
   <section id="toolbox" class="reveal">
     <div class="wrap">
       <h2>Technical Toolbox</h2>
-      <p class="sub">Data tools, database platforms, and analytical frameworks used in production environments.</p>
+      <p class="sub">Data tools, database platforms, machine learning libraries, and analytical frameworks used in production environments.</p>
       <div class="grid">
         <div class="card">
           <h3>Data &amp; BI Platforms</h3>
           <div class="tags"><span class="tag">SQL</span><span class="tag">Microsoft SQL Server</span><span class="tag">Oracle SQL Developer</span><span class="tag">Tableau</span><span class="tag">Microsoft Power BI</span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Excel (Advanced)</span></div>
         </div>
         <div class="card">
-          <h3>Databases &amp; Querying</h3>
-          <div class="tags"><span class="tag">Relational Databases</span><span class="tag">JSON / XML</span><span class="tag">REST APIs</span><span class="tag">ETL Workflows</span><span class="tag">Postman</span></div>
+          <h3>Machine Learning &amp; Pipelines</h3>
+          <div class="tags"><span class="tag">scikit-learn</span><span class="tag">NumPy</span><span class="tag">Regression Modeling</span><span class="tag">Train/Test Validation</span><span class="tag">JSON / XML</span><span class="tag">REST APIs</span><span class="tag">ETL Workflows</span></div>
         </div>
         <div class="card">
           <h3>Governance &amp; Delivery</h3>
@@ -345,7 +361,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:v
   <section id="edu" class="reveal">
     <div class="wrap">
       <h2>Education &amp; Credentials</h2>
-      <p class="sub">Rigorous academic foundation in Business Information Systems combined with ongoing specialization in Machine Learning and data analytics.</p>
+      <p class="sub">Rigorous academic foundation in Business Information Systems combined with advanced professional certifications and technical training.</p>
       <div class="grid">
         <div class="card">
           <h3>Graduate</h3>
@@ -356,9 +372,9 @@ footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:v
           <p><b style="color:var(--hd)">B.S., Business Information Systems</b><br>Oregon State University<br>Dean&rsquo;s Leadership and Professional Achievement Award</p>
         </div>
         <div class="card">
-          <h3>Current Coursework &amp; Certs</h3>
+          <h3>Professional Certifications &amp; Training</h3>
           <ul class="l">
-            <li>Machine Learning (Jupyter / Python modeling)</li>
+            <li>Applied Python &amp; Predictive Analytics Specialization</li>
             <li>W3Schools Advanced SQL Certification</li>
             <li>Six Sigma Yellow Belt (SSYB)</li>
             <li>Lean Kanban Essentials &amp; Scrum for Operations</li>
